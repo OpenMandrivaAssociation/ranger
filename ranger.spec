@@ -31,6 +31,7 @@ you'll be going.
 %{__python3} setup.py install -O1 --skip-build --root %{buildroot}
 mv %{buildroot}%{_docdir}/%{name} rpmdocs
 find rpmdocs -type f -exec chmod -v -R -X '{}' \;
+sed -i 's!python -s -O!python -O!g' %{buildroot}%{_bindir}/%{name}
 
 
 %files
