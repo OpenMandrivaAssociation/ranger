@@ -10,6 +10,8 @@ Source0:        https://github.com/ranger/ranger/archive/v%{version}.tar.gz#/%{n
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+Requires:	python-chardet
+Requires:	sudo
 
 #Suggests:       w3m-img
 
