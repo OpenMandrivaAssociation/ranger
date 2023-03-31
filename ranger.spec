@@ -1,6 +1,6 @@
 Name:           ranger
 Version:	1.9.3
-Release:	1
+Release:	2
 Summary:        A flexible console file manager
 
 Group:          File tools
