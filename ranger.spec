@@ -25,7 +25,7 @@ one, lists of files on the other, with a preview to the right so you know where
 you'll be going.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %py3_build
