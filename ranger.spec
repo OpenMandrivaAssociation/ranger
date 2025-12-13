@@ -1,6 +1,6 @@
 Name:           ranger
 Version:	1.9.4
-Release:	1
+Release:	2
 Summary:        A flexible console file manager
 
 Group:          File tools
@@ -10,6 +10,8 @@ Source0:        https://github.com/ranger/ranger/archive/v%{version}.tar.gz#/%{n
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+BuildRequires:  python-pip
+BuildRequires:  python-setuptools
 Requires:	python-chardet
 Requires:	sudo
 
@@ -23,7 +25,7 @@ one, lists of files on the other, with a preview to the right so you know where
 you'll be going.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %py3_build
